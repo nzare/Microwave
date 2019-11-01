@@ -1,0 +1,579 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+final.bin -- emu8086 assembler version: 4.08  
+ 
+[ 22-04-2019  --  19:11:15 ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       #make_bin#
+[   2]        :                                       
+[   3]        :                                       #LOAD_SEGMENT=FFFFh#
+[   4]        :                                       #LOAD_OFFSET=0000h#
+[   5]        :                                       
+[   6]        :                                       #CS=0000h#
+[   7]        :                                       #IP=0000h#
+[   8]        :                                       
+[   9]        :                                       #DS=0000h#
+[  10]        :                                       #ES=0000h#
+[  11]        :                                       
+[  12]        :                                       #SS=0000h#
+[  13]        :                                       #SP=FFFEh#
+[  14]        :                                       
+[  15]        :                                       #AX=0000h#
+[  16]        :                                       #BX=0000h#
+[  17]        :                                       #CX=0000h#
+[  18]        :                                       #DX=0000h#
+[  19]        :                                       #SI=0000h#
+[  20]        :                                       #DI=0000h#
+[  21]        :                                       #BP=0000h#
+[  22]        :                                       
+[  23]        :                                       ; add your code here
+[  24]    0000: E9 05 04                              jmp     st1
+[  25]    0003: 90                                    nop
+[  26]    0004: 00 00                                 dw      0000
+[  27]    0006: 00 00                                 dw      0000
+[  28]    0008: 88 05                                 dw      tisr
+[  29]    000A: 00 00                                 dw      0000
+[  30]    000C: 00 00 00 00 00 00 00 00 00 00 00 00   		 db     1020 dup(0)
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                                                    
+[  31]        :                                       ;main program
+[  32]        :                                       
+[  33]        :                                       
+[  34]        :                                       porta equ 20h
+[  35]        :                                       portb equ 22h
+[  36]        :                                       portc equ 24h
+[  37]        :                                       creg equ 26h
+[  38]        :                                       
+[  39]        :                                       counter0 equ 10H
+[  40]        :                                       counter1 equ 12H
+[  41]        :                                       counter2 equ 14h
+[  42]        :                                       creg_count equ 16h
+[  43]        :                                       
+[  44]        :                                       porta2 equ 18h
+[  45]        :                                       portb2 equ 1Ah
+[  46]        :                                       portc2 equ 1Ch
+[  47]        :                                       creg2 equ 1Eh
+[  48]        :                                       
+[  49]        :                                       timer1 equ 30h
+[  50]        :                                       level equ 02h
+[  51]        :                                       power equ 03h
+[  52]        :                                       
+[  53]    0408: FA                                    st1:      cli
+[  54]        :                                       ;intialize ds, es,ss to start of RAM
+[  55]    0409: B8 00 02                              mov       ax,0200h
+[  56]    040C: 8E D8                                 mov       ds,ax
+[  57]    040E: 8E C0                                 mov       es,ax
+[  58]    0410: 8E D0                                 mov       ss,ax
+[  59]    0412: BC FE 0F                              mov       sp,0FFEH
+[  60]    0415:                                       ini:
+[  61]        :                                       ;;default values to data locations
+[  62]        :                                       
+[  63]    0415: C7 06 30 00 00 00                     mov word ptr timer1 , 0000h
+[  64]    041B: C6 06 02 00 80                        mov byte ptr level , 80h
+[  65]    0420: C6 06 03 00 05                        mov byte ptr power , 05h
+[  66]    0425: B0 89                                 	mov al,10001001b
+[  67]    0427: E6 26                                 	out creg,al ;; init 8255(1)
+[  68]    0429: B0 00                                 	mov al,00h
+[  69]    042B: E6 22                                 	out portb,al
+[  70]    042D: E6 20                                 	out porta,al
+[  71]    042F: B0 80                                 	mov al,10000000b
+[  72]    0431: E6 1E                                 	out creg2,al ;; init 8255(2)
+[  73]    0433: B0 00                                 	mov al,00
+[  74]    0435: E6 1C                                 	out portc2,al
+[  75]        :                                       	
+[  76]        :                                       ;;timer1
+[  77]        :                                       ;;initialize counter0 and counter1
+[  78]    0437: B0 03                                 	mov al,00000011b
+[  79]    0439: E6 1E                                 	out creg2,al;;gate high
+[  80]    043B: B0 34                                 	mov al,00110100b
+[  81]    043D: E6 16                                 	out creg_count,al
+[  82]    043F: B0 A8                                 	mov al,0A8h
+[  83]    0441: E6 10                                 	out counter0,al
+[  84]    0443: B0 61                                 	mov al,61h;;count of 25000
+[  85]    0445: E6 10                                 	out counter0,al
+[  86]    0447: B0 55                                 	mov al,01010101b
+[  87]    0449: E6 16                                 	out creg_count,al
+[  88]    044B: B0 9A                                 	mov al,9Ah
+[  89]    044D: E6 12                                 	out counter1,al
+[  90]    044F: B0 02                                 	mov al,00000010b
+[  91]    0451: E6 1E                                 	out creg2,al;;gate low
+[  92]        :                                       	
+[  93]        :                                       	
+[  94]        :                                       ;;main_main
+[  95]    0453: E4 24                                 Y12:in al,portc
+[  96]    0455: 24 1F                                 	and al,1fh
+[  97]    0457: 3C 1F                                 	cmp al,1fh
+[  98]    0459: 75 F8                                 	jnz Y12
+[  99]        :                                       	
+[ 100]    045B: E8 95 02                              	call delay
+[ 101]        :                                       	
+[ 102]    045E: E4 24                                 Y13: in al,portc
+[ 103]    0460: 24 1F                                 	and al,1fh
+[ 104]    0462: 3C 1F                                 	cmp al,1fh
+[ 105]    0464: 74 F8                                 	jz Y13
+[ 106]        :                                       	
+[ 107]    0466: E8 8A 02                              	call delay
+[ 108]        :                                       	
+[ 109]    0469: E4 24                                 	in al,portc
+[ 110]    046B: 24 1F                                 	and al,1fh
+[ 111]    046D: 3C 1F                                 	cmp al,1fh
+[ 112]    046F: 74 ED                                 	jz Y13
+[ 113]        :                                       
+[ 114]    0471: 3C 0F                                 	cmp al,0fh
+[ 115]    0473: 74 12                                 	je Y14
+[ 116]    0475: 3C 17                                 	cmp al,017h
+[ 117]    0477: 74 18                                 	je Y15
+[ 118]    0479: 3C 1B                                 	cmp al,01bh
+[ 119]    047B: 74 1E                                 	je Y16
+[ 120]    047D: 3C 1D                                 	cmp al,01dh
+[ 121]    047F: 74 24                                 	je Y17
+[ 122]    0481: 3C 1E                                 	cmp al,01eh
+[ 123]    0483: 74 2A                                 	je start_start
+[ 124]    0485: EB D7                                 	jmp Y13
+[ 125]        :                                       	
+[ 126]    0487: E8 1F 02                              Y14:call time_10m
+[ 127]    048A: C6 06 02 00 00                        	mov byte ptr [level] , 00
+[ 128]    048F: EB C2                                 	jmp Y12
+[ 129]        :                                       	
+[ 130]    0491: E8 F3 01                              Y15: call time_1m
+[ 131]    0494: C6 06 02 00 00                        	mov byte ptr [level] , 00
+[ 132]    0499: EB B8                                 	jmp Y12
+[ 133]        :                                       
+[ 134]    049B: E8 C2 01                              Y16: call time_10s
+[ 135]    049E: C6 06 02 00 00                        	mov byte ptr [level] , 00
+[ 136]    04A3: EB AE                                 	jmp Y12
+[ 137]        :                                       
+[ 138]    04A5: E8 1B 02                              Y17: call power_sub
+[ 139]    04A8: C6 06 02 00 00                        	mov byte ptr [level] , 00
+[ 140]    04AD: EB A4                                 	jmp Y12
+[ 141]        :                                       ;;end of debounce
+[ 142]        :                                       
+[ 143]    04AF:                                       start_start:
+[ 144]    04AF: 80 3E 02 00 80                        	cmp byte ptr [level] , 80h
+[ 145]    04B4: 75 0B                                 	jnz no_quick
+[ 146]    04B6: C7 06 30 00 30 00                     	mov word ptr [timer1] , 0030h
+[ 147]    04BC: C6 06 02 00 00                        	mov byte ptr [level] , 00h
+[ 148]    04C1:                                       no_quick:
+[ 149]    04C1: B0 03                                 	mov al,00000011b;;gate high
+[ 150]    04C3: E6 1E                                 	out creg2,al
+[ 151]    04C5: B0 07                                 	mov al,00000111b;;initial impulse
+[ 152]    04C7: E6 1E                                 	out creg2,al
+[ 153]    04C9: B0 06                                 	mov al,00000110b;;initial impulse over
+[ 154]    04CB: E6 1E                                 	out creg2,al
+[ 155]    04CD: F9                                    	stc
+[ 156]    04CE: E8 32 01                              	call parts
+[ 157]        :                                       	
+[ 158]        :                                       ;;poll the stop button
+[ 159]    04D1: 80 E4 00                              	and ah,00
+[ 160]        :                                       	
+[ 161]        :                                       ;;wait till start button lifted 	
+[ 162]    04D4: E4 24                                 Y40:in al,portc
+[ 163]    04D6: A9 01 00                              	test ax,1
+[ 164]    04D9: 74 F9                                 	jz Y40
+[ 165]    04DB: E8 15 02                              	call delay
+[ 166]    04DE:                                       a1:	
+[ 167]    04DE: 80 3E 02 00 FF                        	cmp byte ptr [level] , 0FFh
+[ 168]    04E3: 75 03 E9 13 02                        	jz complete
+[ 169]    04E8: E4 24                                 	in al,portc
+[ 170]    04EA: 24 20                                 	and al,20h
+[ 171]    04EC: 3C 00                                 	cmp al,00h
+[ 172]    04EE: 74 23                                 	je Y30
+[ 173]    04F0: 24 01                                 	and al,01h
+[ 174]    04F2: 3C 00                                 	cmp al,00h
+[ 175]    04F4: 74 02                                 	je Y31
+[ 176]    04F6: EB E6                                 	jmp a1
+[ 177]    04F8:                                       Y31:
+[ 178]    04F8: E8 F8 01                              	call delay
+[ 179]    04FB: E4 24                                 	in al,portc
+[ 180]    04FD: 24 01                                 	and al,01h
+[ 181]    04FF: 3C 00                                 	cmp al,00h
+[ 182]    0501: 75 DB                                 	jne a1
+[ 183]    0503: E8 66 00                              	call add30
+[ 184]    0506: E8 EA 01                              	call delay
+[ 185]        :                                       	
+[ 186]        :                                       ;;wait til start button lifted 		
+[ 187]    0509: E4 24                                 Y48:in al,portc
+[ 188]    050B: 24 01                                 	and al,01h
+[ 189]    050D: 3C 00                                 	cmp al,00h
+[ 190]    050F: 74 F8                                 	je Y48
+[ 191]    0511: EB CB                                 	jmp a1
+[ 192]    0513:                                       Y30:
+[ 193]    0513: E4 24                                 	in al,portc
+[ 194]    0515: 24 20                                 	and al,20h
+[ 195]    0517: 3C 00                                 	cmp al,00h
+[ 196]    0519: 75 C3                                 	jne a1
+[ 197]    051B: B0 02                                 	mov al,00000010b
+[ 198]    051D: E6 1E                                 	out creg2,al;;gate low
+[ 199]    051F: F8                                    	clc
+[ 200]    0520: E8 E0 00                              	call parts
+[ 201]        :                                       	
+[ 202]        :                                       ;;wait til stop button lifted
+[ 203]    0523: E4 24                                 Y49:in al,portc
+[ 204]    0525: A9 20 00                              	test ax,20h
+[ 205]    0528: 74 F9                                 	jz Y49
+[ 206]    052A: E4 24                                 a3:	in al,portc
+[ 207]    052C: A9 20 00                              	test ax,20h
+[ 208]    052F: 74 07                                 	jz reset_now
+[ 209]    0531: A9 01 00                              	test ax,1
+[ 210]    0534: 74 15                                 	jz start_again
+[ 211]    0536: EB F2                                 	jmp a3
+[ 212]        :                                       
+[ 213]    0538:                                       reset_now:
+[ 214]    0538: E4 24                                 	in al,portc
+[ 215]    053A: A9 20 00                              	test ax,20h
+[ 216]    053D: 75 EB                                 	jnz a3
+[ 217]    053F: C7 06 30 00 00 00                     	mov word ptr [timer1] , 0000h
+[ 218]    0545: E8 9C 01                              	call update_disp
+[ 219]    0548: E9 CA FE                              	jmp ini
+[ 220]        :                                       
+[ 221]    054B:                                       start_again:
+[ 222]    054B: E4 24                                 	in al,portc
+[ 223]    054D: A9 01 00                              	test ax,01h
+[ 224]    0550: 75 D8                                 	jnz a3
+[ 225]    0552: B0 03                                 	mov al,00000011b
+[ 226]    0554: E6 1E                                 	out creg2,al;;gate high
+[ 227]    0556: 8A 3E 02 00                           	mov bh,byte ptr [level]
+[ 228]    055A: D0 CF                                 	ror bh,1
+[ 229]    055C: 73 0B                                 	jnc no_on
+[ 230]    055E: F9                                    	stc
+[ 231]    055F: E8 A1 00                              	call parts
+[ 232]    0562: E4 24                                 Y50:in al,portc
+[ 233]    0564: A9 01 00                              	test ax,01h
+[ 234]    0567: 74 F9                                 	jz Y50
+[ 235]    0569: E9 72 FF                              no_on:	jmp a1	
+[ 236]        :                                       
+[ 237]        :                                       ;;;;;;;;;;;;;;;
+[ 238]        :                                       
+[ 239]    056C:                                       add30:
+[ 240]    056C: A1 30 00                              	mov ax , word ptr [timer1]
+[ 241]    056F: 05 30 00                              	add ax,030h
+[ 242]    0572: 25 F0 00                              	and ax,0f0h
+[ 243]    0575: 3D 60 00                              	cmp ax,060h
+[ 244]    0578: 7C 08                                 	jl lesss
+[ 245]    057A: 81 06 30 00 D0 00                     	add word ptr [timer1] , 0d0h
+[ 246]    0580: EB 05                                 	jmp donn
+[ 247]    0582: 83 06 30 00 30                        lesss:	add word ptr [timer1] , 030h
+[ 248]    0587:                                       donn:	
+[ 249]    0587: C3                                    ret
+[ 250]        :                                       
+[ 251]        :                                       ;;;;;;;;;;;;;;;
+[ 252]        :                                       
+[ 253]    0588:                                       tisr:
+[ 254]    0588: E4 24                                 	in al,portc
+[ 255]    058A: A8 80                                 	test al,80h
+[ 256]    058C: 74 13                                 	jz a10s
+[ 257]    058E: A8 40                                 	test al,40h
+[ 258]    0590: 74 01                                 	jz a1s
+[ 259]        :                                       
+[ 260]    0592: CF                                    iret 	
+[ 261]        :                                       
+[ 262]        :                                       ;;;;;;;;;;;;;;;
+[ 263]        :                                       
+[ 264]    0593:                                       a1s:
+[ 265]    0593: 83 3E 30 00 00                        	cmp word ptr [timer1] , 00
+[ 266]    0598: 74 06                                 	jz n1;;just if in case there is skew
+[ 267]    059A: E8 7B 00                              	call dec_timer
+[ 268]    059D: E8 44 01                              	call update_disp
+[ 269]    05A0:                                       n1:
+[ 270]    05A0: CF                                    iret
+[ 271]        :                                       
+[ 272]        :                                       ;;;;;;;;;;;;;;
+[ 273]        :                                       
+[ 274]    05A1:                                       a10s:
+[ 275]    05A1: 53                                    	PUSH BX
+[ 276]    05A2: 51                                    	PUSH CX
+[ 277]    05A3: 50                                    	PUSH AX
+[ 278]    05A4: A8 40                                 	test al,40h
+[ 279]    05A6: 75 0D                                 	jnz noq1s
+[ 280]    05A8: 83 3E 30 00 00                        	cmp word ptr [timer1] , 00
+[ 281]    05AD: 74 4B                                 	je finish
+[ 282]    05AF: E8 66 00                              	call dec_timer
+[ 283]    05B2: E8 2F 01                              	call update_disp
+[ 284]    05B5:                                       noq1s:	
+[ 285]    05B5: 83 3E 30 00 00                        	cmp word ptr [timer1] , 00
+[ 286]    05BA: 74 3E                                 	jz finish
+[ 287]    05BC:                                       no_second:	
+[ 288]    05BC: 8A 1E 03 00                           	mov bl,byte ptr [power]
+[ 289]    05C0: D0 E3                                 	shl bl,1
+[ 290]    05C2: 8A 3E 02 00                           	mov bh,byte ptr [level]
+[ 291]    05C6: D0 CF                                 	ror bh,1
+[ 292]    05C8: 72 12                                 	jc second_count
+[ 293]    05CA: F9                                    	stc
+[ 294]    05CB: E8 35 00                              	call parts
+[ 295]    05CE: B0 98                                 	mov al,10011000b
+[ 296]    05D0: E6 16                                 	out creg_count,al
+[ 297]    05D2: 8A C3                                 	mov al,bl
+[ 298]    05D4: E6 14                                 	out counter2,al
+[ 299]    05D6: FE 06 02 00                           	inc byte ptr [level]
+[ 300]    05DA: EB 23                                 	jmp done_quantum_10s
+[ 301]    05DC:                                       second_count:
+[ 302]    05DC: F8                                    	clc
+[ 303]    05DD: E8 23 00                              	call parts
+[ 304]    05E0: F6 DB                                 	neg bl
+[ 305]    05E2: 80 C3 0A                              	add bl,0Ah
+[ 306]    05E5: 80 FB 00                              	cmp bl,00
+[ 307]    05E8: 75 06                                 	jne not_nocount
+[ 308]    05EA: FE 0E 02 00                           	dec byte ptr [level]
+[ 309]    05EE: EB CC                                 	jmp no_second
+[ 310]    05F0:                                       not_nocount:	
+[ 311]    05F0: 8A C3                                 	mov al,bl
+[ 312]    05F2: E6 14                                 	out counter2,al	
+[ 313]    05F4: FE 0E 02 00                           	dec byte ptr [level]
+[ 314]    05F8: EB 05                                 	jmp done_quantum_10s
+[ 315]    05FA:                                       finish:
+[ 316]    05FA: C6 06 02 00 FF                        	mov byte ptr level,0FFh
+[ 317]    05FF:                                       done_quantum_10s:
+[ 318]    05FF: 58                                    	POP AX
+[ 319]    0600: 59                                    	POP CX
+[ 320]    0601: 5B                                    	POP BX
+[ 321]    0602: CF                                    iret
+[ 322]        :                                       
+[ 323]        :                                       ;;;;;;;;;;;;;;;;;
+[ 324]        :                                       ;;set cf to on the parts
+[ 325]        :                                       ;;reset cf to off the parts
+[ 326]    0603:                                       parts:
+[ 327]    0603: 73 0A                                 	jnc offf
+[ 328]    0605: B0 01                                 	mov al,00000001b
+[ 329]    0607: E6 1E                                 	out creg2,al;;gate high again
+[ 330]    0609: B0 05                                 	mov al,00000101b
+[ 331]    060B: E6 1E                                 	out creg2,al
+[ 332]    060D: EB 08                                 	jmp retur
+[ 333]    060F:                                       offf:
+[ 334]    060F: B0 00                                 	mov al,00000000b
+[ 335]    0611: E6 1E                                 	out creg2,al;;gate high again
+[ 336]    0613: B0 04                                 	mov al,00000100b
+[ 337]    0615: E6 1E                                 	out creg2,al
+[ 338]    0617: C3                                    retur: ret
+[ 339]        :                                       
+[ 340]        :                                       ;;;;;;;;;;;;;;;;;;;
+[ 341]        :                                       
+[ 342]    0618:                                       dec_timer:
+[ 343]    0618: 52                                    	PUSH DX
+[ 344]    0619: 53                                    	PUSH BX
+[ 345]    061A: A1 30 00                              	mov ax,word ptr [timer1]
+[ 346]    061D: 8B D8                                 	mov bx,ax
+[ 347]    061F: 48                                    	dec ax
+[ 348]    0620: 8B D0                                 	mov dx,ax
+[ 349]    0622: 25 0F 00                              	and ax,000fh
+[ 350]    0625: 3D 0F 00                              	cmp ax,000fh
+[ 351]    0628: 74 02                                 	jz Y20
+[ 352]    062A: EB 06                                 	jmp Y21
+[ 353]    062C:                                       Y20:
+[ 354]    062C: 83 E2 F0                              	and dx,0fff0h
+[ 355]    062F: 83 C2 09                              	add dx,0009h
+[ 356]    0632:                                       Y21:
+[ 357]    0632: 8B C3                                 	mov ax,bx
+[ 358]    0634: 25 F0 00                              	and ax,00f0h
+[ 359]    0637: 3D F0 00                              	cmp ax,00f0h
+[ 360]    063A: 74 02                                 	jz Y22
+[ 361]    063C: EB 07                                 	jmp Y23
+[ 362]    063E:                                       Y22:
+[ 363]    063E: 81 E2 0F FF                           	and dx,0ff0fh
+[ 364]    0642: 83 C2 50                              	add dx,0050h
+[ 365]    0645:                                       Y23:
+[ 366]    0645: 8B C3                                 	mov ax,bx
+[ 367]    0647: 25 00 0F                              	and ax,0f00h
+[ 368]    064A: 3D 00 0F                              	cmp ax,0f00h
+[ 369]    064D: 74 02                                 	jz Y24
+[ 370]    064F: EB 08                                 	jmp Y25
+[ 371]    0651:                                       Y24:
+[ 372]    0651: 81 E2 FF F0                           	and dx,0f0ffh
+[ 373]    0655: 81 C2 00 09                           	add dx,0900h
+[ 374]    0659:                                       Y25:
+[ 375]    0659: 89 16 30 00                           	mov word ptr [timer1],dx
+[ 376]    065D: 5B                                    	POP BX
+[ 377]    065E: 5A                                    	POP DX
+[ 378]    065F: C3                                    ret
+[ 379]        :                                       
+[ 380]        :                                       ;;;;;;;;;;;;;;;;;;;
+[ 381]        :                                       
+[ 382]    0660:                                       time_10s:
+[ 383]    0660: 53                                    	push bx
+[ 384]    0661: 83 06 30 00 10                        	add word ptr timer1,0010h
+[ 385]    0666: 8B 1E 30 00                           	mov bx , word ptr [timer1]
+[ 386]    066A: 81 E3 F0 00                           	and bx,0f0h
+[ 387]    066E: 83 FB 60                              	cmp bx,060h
+[ 388]    0671: 74 02                                 	je Y2
+[ 389]    0673: EB 0D                                 Y4: jmp Y3
+[ 390]    0675: 83 2E 30 00 60                        Y2: sub word ptr timer1,0060h
+[ 391]    067A: 81 06 30 00 00 01                     	add word ptr timer1,0100h
+[ 392]    0680: EB F1                                 	jmp Y4	
+[ 393]    0682: E8 5F 00                              Y3: call update_disp
+[ 394]    0685: 5B                                    	pop bx
+[ 395]    0686: C3                                    ret
+[ 396]        :                                       
+[ 397]        :                                       ;;;;;;;;;;;;
+[ 398]        :                                       
+[ 399]    0687:                                       time_1m:
+[ 400]    0687: 53                                    	push bx
+[ 401]    0688: 81 06 30 00 00 01                     	add word ptr timer1,0100h
+[ 402]    068E: 8B 1E 30 00                           	mov bx , word ptr [timer1]
+[ 403]    0692: 81 E3 00 0F                           	and bx,0f00h
+[ 404]    0696: 81 FB 00 0A                           	cmp bx,0a00h
+[ 405]    069A: 74 02                                 	je Y5
+[ 406]    069C: EB 06                                 	jmp Y6
+[ 407]    069E: 81 06 30 00 00 06                     Y5:	add word ptr timer1,0600h
+[ 408]    06A4: E8 3D 00                              Y6: call update_disp
+[ 409]    06A7: 5B                                    	pop bx
+[ 410]    06A8: C3                                    ret
+[ 411]        :                                       
+[ 412]        :                                       ;;;;;;;;;;;;;
+[ 413]        :                                       	
+[ 414]    06A9:                                       time_10m:
+[ 415]    06A9: 81 06 30 00 00 10                     	add word ptr timer1,1000h
+[ 416]    06AF: 81 3E 30 00 00 60                     	cmp word ptr timer1,6000h
+[ 417]    06B5: 7D 02                                 	jge Y7
+[ 418]    06B7: EB 06                                 	jmp Y8
+[ 419]    06B9: C7 06 30 00 00 60                     Y7:	mov word ptr timer1,6000h
+[ 420]    06BF: E8 22 00                              Y8: call update_disp
+[ 421]    06C2: C3                                    ret
+[ 422]        :                                       
+[ 423]        :                                       ;;;;;;;;;;;;;
+[ 424]        :                                       
+[ 425]    06C3:                                       power_sub:
+[ 426]    06C3: FE 0E 03 00                           	dec byte ptr power
+[ 427]    06C7: 80 3E 03 00 00                        	cmp byte ptr power,0
+[ 428]    06CC: 74 02                                 	je Y11
+[ 429]    06CE: EB 05                                 	jmp Y10
+[ 430]    06D0: C6 06 03 00 05                        Y11: mov byte ptr power,5	
+[ 431]    06D5: E8 01 00                              Y10: call update_pow
+[ 432]    06D8: C3                                    ret
+[ 433]        :                                       
+[ 434]        :                                       ;;;;;;;;;;;
+[ 435]    06D9:                                       update_pow:
+[ 436]    06D9: 53                                    	PUSH BX
+[ 437]    06DA: 8B 1E 03 00                           	mov bx, word ptr [power]
+[ 438]    06DE: 8A C3                                 	mov al,bl
+[ 439]    06E0: E6 22                                 	out portb,al
+[ 440]        :                                       	
+[ 441]    06E2: 5B                                    	POP BX
+[ 442]    06E3: C3                                    ret
+[ 443]    06E4:                                       update_disp:
+[ 444]    06E4: 53                                    	PUSH BX
+[ 445]    06E5: 8B 1E 30 00                           	mov bx, word ptr [timer1]
+[ 446]    06E9: 8A C3                                 	mov al,bl
+[ 447]    06EB: E6 22                                 	out portb,al
+[ 448]    06ED: 8A C7                                 	mov al,bh
+[ 449]    06EF: E6 20                                 	out porta,al
+[ 450]    06F1: 5B                                    	POP BX
+[ 451]    06F2: C3                                    ret
+[ 452]        :                                       	
+[ 453]        :                                       ;;;;;;;;;;;;;;;
+[ 454]        :                                       
+[ 455]    06F3:                                       delay:
+[ 456]    06F3: B9 CC 0B                              	mov cx,3020
+[ 457]    06F6: 90                                    Yn: nop
+[ 458]    06F7: 49                                    	dec cx
+[ 459]    06F8: 75 FC                                 	jnz Yn
+[ 460]    06FA: C3                                    ret
+[ 461]        :                                       
+[ 462]        :                                       ;;;;;;;;;;;;;;;
+[ 463]        :                                       
+[ 464]    06FB:                                       complete:
+[ 465]    06FB: F8                                    	clc
+[ 466]    06FC: E8 04 FF                              	call parts
+[ 467]    06FF: B9 FF FF                              	mov cx,0FFFFh
+[ 468]    0702: B0 09                                 Y66:mov al,00001001b
+[ 469]    0704: E6 1E                                 	out creg2,al
+[ 470]    0706: E2 FA                                 	loop Y66
+[ 471]    0708: B0 08                                 	mov al,00001000b
+[ 472]    070A: E6 1E                                 	out creg2,al
+[ 473]    070C: E9 06 FD                              	jmp ini
+[ 474]        :                                       
+[ 475]        :                                       ;;;;;;;;;;;;;;;
+[ 476]        :                                       
+ 
+===================================================================================================
+ 
+
+
+
+
+===================================================================================================
